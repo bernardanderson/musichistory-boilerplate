@@ -1,0 +1,122 @@
+
+/*Makes everything on the page follow the border-box measurements */
+* {
+  box-sizing: border-box;
+}
+
+/*Gives a default font to all body text*/
+body {
+  font-family: "Arial";
+  background-color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/**/
+/*All styling for the main page nav*/
+/**/
+.mainnav {
+  background-color: #FFB4B0;
+  border: 2px solid black;
+  margin-bottom: 10px;
+}
+
+.mainnav li, .favoritesong li {
+  display: inline;
+  padding: 0 7px 0 0;
+}
+
+.mainnav a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+
+/*Styles the links in the right menu*/
+.favoritesong a {
+  text-decoration: none;
+  color: black;
+}
+
+/*This gives a line to the left and right of a nav item*/
+li.inner {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding-left: 7px;
+}
+
+/*Styling for the left menu box*/
+.leftmenu {
+  float: left;
+  width: 25%;
+  background-color: #4DD7FA;
+  border: 2px solid black;
+  font-size: 0.95rem;
+  padding: 0;
+  height: 23rem;
+}
+
+/*Styling for the right menu box*/
+.rightmenu {
+  float: right;
+  padding-left: 30px;
+  width: 73%;
+  height: 23em;
+  background-color: #FEFAC0;
+  border: 2px solid black;
+}
+
+/*Styles the filter button*/
+.filter {
+  display: table;
+  padding: 2px 35px;
+  margin: 5px auto 0 auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: lightgray;
+}
+
+.filter:hover {
+  cursor: pointer;
+  background-color: darkgray;
+}
+
+.rightmenu h2 {
+  color: #785616;
+  margin: 1.2em 0 -0.3em 0;
+}
+
+/*Gets rid of the default padding of the ul in the right menu*/
+.rightmenu ul {
+  padding: 0;
+}
+
+/*Spaces out the input divs in the left menu*/
+.leftmenu div {
+  margin: 10px 15px 13px 10px;
+  font-size: 1.1em;
+}
+
+/*Allows the inline stacking of the two checkbox navs*/
+.genrelist-left, .genrelist-right {
+  display: inline-block;
+  /*width: 85px;*/
+}
+
+/*Display the checkbox items and labels so they line up nicely*/
+.genrelist {
+  display: block;
+  padding: 3px;
+}
+
+/*Gives space to the labels in the leftmenu*/
+div > label {
+  display: block;
+  line-height: 1.75em;
+}
+
+/*Makes the range and dropdown selector all the same length*/
+select, input[type="range"]{
+  display: block;
+  width: 12em;
+}
