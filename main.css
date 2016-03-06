@@ -6,6 +6,8 @@
 
 /*Gives a default font to all body text*/
 body {
+  display: flex;
+  flex-direction: column;
   font-family: "Arial";
   background-color: white;
   margin-left: 10%;
@@ -31,6 +33,12 @@ body {
   text-decoration: none;
 }
 
+.mainform {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 /*Styles the links in the right menu*/
 .favoritesong a {
@@ -47,28 +55,29 @@ li.inner {
 
 /*Styling for the left menu box*/
 .leftmenu {
-  float: left;
-  width: 25%;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 27%;
+  flex-wrap: wrap;
   background-color: #4DD7FA;
   border: 2px solid black;
   font-size: 0.95rem;
-  padding: 0;
-  height: 23rem;
+  padding-bottom: 1%;
+  height: auto;
 }
 
 /*Styling for the right menu box*/
 .rightmenu {
-  float: right;
-  padding-left: 30px;
-  width: 73%;
-  height: 23em;
+  flex-basis: 70%;
+  padding-left: 4%;
+  height: auto;
   background-color: #FEFAC0;
   border: 2px solid black;
 }
 
 /*Styles the filter button*/
 .filter {
-  display: table;
+  display: block;
   padding: 2px 35px;
   margin: 5px auto 0 auto;
   border: 2px solid black;
@@ -93,30 +102,30 @@ li.inner {
 
 /*Spaces out the input divs in the left menu*/
 .leftmenu div {
-  margin: 10px 15px 13px 10px;
+  margin: 5px 15px 5px 10px;
   font-size: 1.1em;
 }
 
+.genre-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 /*Allows the inline stacking of the two checkbox navs*/
 .genrelist-left, .genrelist-right {
-  display: inline-block;
-  /*width: 85px;*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
 }
 
 /*Display the checkbox items and labels so they line up nicely*/
 .genrelist {
-  display: block;
   padding: 3px;
-}
-
-/*Gives space to the labels in the leftmenu*/
-div > label {
-  display: block;
-  line-height: 1.75em;
 }
 
 /*Makes the range and dropdown selector all the same length*/
 select, input[type="range"]{
   display: block;
-  width: 12em;
+  width: 13rem;
 }
