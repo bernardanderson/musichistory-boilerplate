@@ -53,6 +53,11 @@ li.inner {
   padding-left: 7px;
 }
 
+/*Adds a border to the middle of the Artist / Album Title in the right song menu*/
+.right-bar {
+  border-right: 2px solid black;
+}
+
 /*Styling for the left menu box*/
 .leftmenu {
   display: flex;
