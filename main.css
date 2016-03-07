@@ -23,9 +23,14 @@ body {
   margin-bottom: 10px;
 }
 
-.mainnav li, .favoritesong li {
+.mainnav li {
   display: inline;
   padding: 0 7px 0 0;
+}
+
+.favoritesong li {
+  font-size: 0.9rem;
+  padding-bottom: 1px;
 }
 
 .mainnav a:hover {
@@ -97,11 +102,11 @@ li.inner {
 
 .rightmenu h2 {
   color: #785616;
-  margin: 1.2em 0 -0.3em 0;
+  margin: 0.8rem 0 -0.3rem 0;
 }
 
 /*Gets rid of the default padding of the ul in the right menu*/
-.rightmenu ul {
+.rightmenu ol {
   padding: 0;
 }
 
