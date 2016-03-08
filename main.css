@@ -38,7 +38,7 @@ body {
   text-decoration: none;
 }
 
-.mainform {
+.view-form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -64,7 +64,7 @@ li.inner {
 }
 
 /*Styling for the left menu box*/
-.leftmenu {
+.leftmenu{
   display: flex;
   flex-direction: column;
   flex-basis: 27%;
@@ -138,4 +138,23 @@ li.inner {
 select, input[type="range"]{
   display: block;
   width: 13rem;
+}
+
+.add-form {
+  display: flex;
+  height: auto;
+  background-color: #FEFAC0;
+  border: 2px solid black;
+  height: 350px;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-form > button, input {
+  flex-basis: 20%;
+  height: 25px;
+}
+
+.hidden{
+  display: none;
 }

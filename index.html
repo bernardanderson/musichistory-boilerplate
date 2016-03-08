@@ -11,13 +11,20 @@
 
     <nav class="mainnav">
       <ul>
-        <li><a href="#">View Music</a></li>
-        <li class="inner"><a href="#">Add Music</a></li>
+        <li><a href="#" id="view-music">View Music</a></li>
+        <li class="inner"><a href="#" id="add-music">Add Music</a></li>
         <li><a href="#">Profile</a></li>
       </ul>
     </nav>
+    
+    <div id="main-add-form" class="add-form">
+      <button id="add-form-button">Add Info</button>
+      <input id="song-title-input" type="text" placeholder="Add A Song Title"/>
+      <input id="artist-input" type="text" placeholder="Add An Artist"/>
+      <input id="album-input" type="text" placeholder="Add An Album"/>
+    </div>
 
-    <div class="mainform">
+    <div id="main-view-form" class="view-form">
       <div class="leftmenu">
         <div>
           <label>Song Length:</label>
