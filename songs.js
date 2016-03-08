@@ -1,3 +1,9 @@
+var addMusicLink = document.getElementById("add-music");
+var viewMusicLink = document.getElementById("view-music");
+var addMusicButton = document.getElementById("add-form-button");
+var mainViewForm = document.getElementById("main-view-form");
+var mainAddForm = document.getElementById("main-add-form");
+
 var songs = [];
 
 songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
@@ -33,5 +39,21 @@ for (var i = 0; i < songs.length; i++) {
   songHolder.innerHTML += "<li>" + currentStringClean + "</li>";
 }
 
+function showViewForm() {
+  mainAddForm.classList.add("hidden");
+  mainViewForm.classList.add("hidden");
 
+  mainViewForm.classList.remove("hidden");
+}
+
+function showAddForm() {
+  mainAddForm.classList.add("hidden");
+  mainViewForm.classList.add("hidden");
+
+  mainAddForm.classList.remove("hidden");
+}
+
+showViewForm();
+viewMusicLink.addEventListener("click", showViewForm);
+addMusicLink.addEventListener("click", showAddForm);
 
